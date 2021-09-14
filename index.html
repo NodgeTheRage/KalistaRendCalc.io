@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalista Rend Calc
+    </title>
+    <link rel="stylesheet" href="kalista.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img class="background mobile" src="img/m.jpg">
+        <div class="fill"></div>
+        <div class="block">
+            <div class="text">Attack Damage</div>
+            <input type="number" class="AttackDamage" placeholder="Attack Damage" value="0" min="0">
+            <div class="text">Spear Amount</div>
+            <input type="number" class="spearAmount" placeholder="Spears Amount" value="0" min="0">
+            <br>
+            <div class="text">Select Ability LeveL</div>
+            <select class="abilityLevel">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <div class="text">Damage Reduction(enter in %)</div>
+            <input type="number" class="dragonArmor" value="0" min="0" max="100">
+            <div class="text textTarget">Select Target</div>
+            <select id="selectTarget" class="target">
+                <option selected>Baron</option>
+                <option>RiftHerald</option>
+            </select><br>
+            <div class="text textExtended">(Remember that if you targeted by Baron then damage will be reduced for
+                additional 50%)
+            </div>
+            <div class="button">Calculations</div>
+            <div class="text TotalDamage"> Damage to Baron</div>
+            <div class="resultText result">0</div>
+            <div class="text TotalDamage"> Damage to Rift Herald</div>
+            <div class="resultText resultRift">0</div>
+            <div class="text TotalDamage">Before Armor Damage</div>
+            <div class="resultText beforeArmor">0</div>
+            <div class="text TotalDamage"> Damage to Dragon</div>
+            <div class="resultText dragonsResult">0</div>
+            <div class="text TotalDamage"> Damage to Champion</div>
+            <div class="resultText championResult">0</div>
+        </div>
+    </div>
+    <script src="kalista.js"></script>
+</body>
+
+</html>

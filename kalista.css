@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    color: white;
+}
+
+.button {
+    width: 100%;
+}
+.resultRift,
+.beforeArmor,
+.result,
+.dragonsResult,
+.championResult {
+    padding: 5px 10px 5px 10px;
+    min-width: 25px;
+    max-height: 20px;
+}
+
+.background {
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    left: 0;
+}
+.desktop {
+    display: none;
+}
+.button {
+    margin: 15px 0;
+    color: white;
+    background-color: rgba(38, 37, 37, 0.494);
+    border-radius: 5px;
+}
+.block {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(77, 77, 77, 0.789);
+}
+
+.target,
+.textTarget {
+    display: none;
+}
+select,
+input {
+    width: 80px;
+    height: 25px;
+    background-color: rgba(38, 37, 37, 0.494);
+    border-radius: 5px;
+    color: white;
+    text-align:center;
+}
+
+.fill { 
+    height: 50px;
+}
+
+.text {
+    margin-right: 70px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 150px;
+    background-color: rgba(38, 37, 37, 0.494);
+}
+.resultText {
+    display: inline-block;
+    background-color: rgba(38, 37, 37, 0.494);
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+}
+.textExtended {
+    width: 100%;
+    margin-right: 0;
+}
+.dragonArmor {
+    width: 45px;
+}
+
+@media (min-width:650px) {
+    .mobile {
+        display: none;
+    }
+    body {
+        background-image: url("img/d.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
