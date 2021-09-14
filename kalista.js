@@ -87,17 +87,23 @@ function calc({
         calculate();
     })
 
-    spears.onkeydown = function(e) {
-        if(!((e.keyCode > 95 && e.keyCode < 106)
-          || (e.keyCode > 47 && e.keyCode < 58) 
-          || e.keyCode == 8)) {
+    spears.onkeydown = function (e) {
+        if (!((e.keyCode > 95 && e.keyCode < 106)
+            || (e.keyCode > 47 && e.keyCode < 58)
+            || e.keyCode == 8)) {
+            if (e.keyCode == 9) {
+                return true;
+            }
             return false;
         }
     }
-    damageValue.onkeydown = function(e) {
-        if(!((e.keyCode > 95 && e.keyCode < 106)
-          || (e.keyCode > 47 && e.keyCode < 58) 
-          || e.keyCode == 8)) {
+    damageValue.onkeydown = function (e) {
+        if (!((e.keyCode > 95 && e.keyCode < 106)
+            || (e.keyCode > 47 && e.keyCode < 58)
+            || e.keyCode == 8)) {
+            if (e.keyCode == 9) {
+                return true;
+            }
             return false;
         }
     }
